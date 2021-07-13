@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardElevation="2dp"
+        android:layout_margin="3dp"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+            <ImageView
+                android:id="@+id/imageRumah"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_alignParentTop="true"
+                android:padding="4dp"
+                android:src="@drawable/bagus"/>
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imageRumah"
+                android:paddingLeft="1dp"
+                android:text="Pembayaran : Cash"
+                android:textColor="@color/Black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="24dp"
+                android:layout_toRightOf="@id/txtNama"
+                android:paddingLeft="1dp"
+                android:text="Second"
+                android:textColor="@color/Blue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtKeterangan"
+                android:layout_below="@+id/txtNama"
+                android:layout_toRightOf="@id/imageRumah"
+                android:paddingLeft="1dp"
+                android:text="Keterangan"
+                android:textColor="@color/Black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtHarga"
+                android:layout_below="@+id/txtKeterangan"
+                android:layout_toRightOf="@id/imageRumah"
+                android:paddingLeft="1dp"
+                android:text="Alamat :"
+                android:textColor="@color/Black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAlamat"
+            android:layout_below="@+id/txtHarga"
+            android:layout_toRightOf="@id/imageRumah"
+            android:paddingLeft="1dp"
+            android:text=" Alamat "
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtLat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="98dp"
+                android:layout_below="@id/txtHarga"
+                android:layout_toRightOf="@id/txtHarga"
+                android:text="Lat :"
+                android:textColor="@color/Red"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imgMarker"
+                android:layout_toRightOf="@+id/txtHarga"
+                android:layout_below="@id/txtHarga"
+                android:layout_marginLeft="-35dp"
+                android:src="@drawable/marker"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/txtLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_below="@id/txtAlamat"
+                android:layout_toRightOf="@id/txtAlamat"
+                android:text="Long :"
+                android:textColor="@color/Red"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
